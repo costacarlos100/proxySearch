@@ -35,7 +35,7 @@ def buscaProxys():
         else:
             break
     return dicionario
-def is_bad_proxy(pip):
+def proxyTest(pip):
     try:
         proxy_handler = urllib.request.ProxyHandler({'https': pip})
         opener = urllib.request.build_opener(proxy_handler)
